@@ -1,0 +1,98 @@
+açilis ekrani formu: 
+TFF bilet satis otomasyonu iki kisimdan olusmaktadir, yönetici ve futbolsever. 
+Bu formda yönetici giris butonuyla yönetici tarafina, futbolsever butonuyla futbolsever tarafina geçis yapabiliriz.
+Context menu strip ile programi kapatabilirsiniz.
+
+
+yönetici giris formu: 
+Bu ekrandan yeni yönetici link labelina tiklayarak yeni yönetici formuna gidilebilir. 
+Menü strip veya context menu strip sayesinde açilis ekranina geri dönebilirsiniz.
+Kullanici adi ve sifre textboxuna yanlis bilgi verildiginde program uyari mesaji vermekte ve textboxun içerigi temizlenmektedir.
+Kullanici adi ve sifre sql veritabaninda dbo.yonetici tablosunda depolanmaktadir.
+Yönetici kisminda deneme yapmaniz için kullanici adi: admin, sifre: 123 olan bir yönetici hesabi olusturulmustur.
+
+
+yeni yönetici formu: 
+programa yönetici olmak için bir kullanici adi, sifre ve sifre tekrar girmemiz yeterlidir. 
+veritabaninda kayitli bir yönetici kullanici adi girersek program uyari mesaji vermektedir. 
+sifre ve sifre tekrar textbox'u ayni degilse programimiz uyari mesaji vermektedir.
+textboxlar bos birakilirsa program uyari mesaji vermektedir.
+menü strip veya context menu strip sayesinde yönetici giris ekranina geri dönebiliriz.
+yönetici kullanici adi ve sifre sql veritabaninda dbo.yonetici tablosunda depolanmaktadir.
+
+
+maç ekle formu: 
+lig seçimine göre veritabaninin dbo.lig tablosundan ligler, dbo.takim tablosundan takimlar ve stadyumlar gelmektedir. 
+takimlar ve stadyumlar programimiza lig adina göre çekilmektedir. 
+maçin tarih ve saatini, tribünlerin kapasitesini ve bilet fiyatlarini belirleyebilecegimiz kontroller bulunmaktadir.
+kaydet butonuna tikladigimizda girdigimiz bilgiler veritabaninda dbo.mac tablosuna kaydedilmektedir.
+ev sahibi ve deplasman combobox'inda ayni iki takimi seçtiysek program uyari mesaji vermektedir.
+temizle butonuna tikladigimizda toolboxlara girdigimiz bilgiler temizlenir.
+menü stripte çikis ile yönetici giris formuna, maç güncelle ile maç güncelleme formuna, maç sil ile maç sil formuna gidebiliriz.
+context menü strip ile yönetici giris formuna geri dönebiliriz.
+
+
+maç güncelle formu: 
+datagridview'e dbo.mac tablosundan ekledigimiz maçlar çekilmektedir.
+datagridview'e tikladigimizda maç bilgileri, belirledigimiz bilet fiyatlari ve kapasite bilgileri gerekli yerlere çekilmektedir.
+maçin tarih ve saatini, bilet fiyatlarini ve kapasitesini güncelleyebiliriz.
+güncelle butonuna tiklandiginda dbo.mac tablosundan ilgili maç güncellenmektedir.
+menu strip'de çikis ile yönetici giris formuna, maç ekle ile maç ekleme formuna, maç sil ile maç sil formuna gidebiliriz.
+context menü strip ile yönetici giris formuna geri dönebiliriz.
+
+
+maç sil formu: 
+datagridview'e dbo.mac tablosundan ekledigimiz maçlar çekilmektedir.
+datagridview'deki pkid degerine göre maç silebiliriz.
+sil butonuna tiklandiginda dbo.mac tablosundan ilgili maç silinmektedir.
+menu strip'de çikis ile yönetici giris formuna, maç ekle ile maç ekleme formuna, maç güncelle ile maç güncelle formuna gidebiliriz.
+context menü strip ile yönetici giris formuna geri dönebiliriz.
+
+
+futbolsever giris formu: 
+bu ekrandan yeni futbolseverlink labeline tiklayarak yeni futbolsever formuna gidebilir. 
+menü strip veya context menu strip sayesinde açilis ekranina geri dönebiliriz.
+kullanici adi ve sifre textbox'ina yanlis bilgi verildiginde program uyari mesaji vermekte ve textbox'un içerigi temizlenmektedir.
+kullanici adi ve sifre sql veritabaninda dbo.sporsever tablosunda depolanmaktadir.
+futbolsever kisminda deneme yapmaniz için kullanici adi: futbolsever, sifre: 123 olan bir kullanici olusturulmustur.
+
+
+yeni futbolsever formu: 
+programa kayit olmak için bir kullanici adi, sifre, sifre tekrar girmemiz, lig seçimi ve takim seçimi yapmamiz yeterlidir. 
+veritabaninda kayitli bir kullanici adi girersek program uyari mesaji vermektedir. 
+sifre ve sifre tekrar textbox'u ayni degilse programimiz uyari mesaji vermektedir.
+textboxlar ve comboboxlar bos birakilirsa program uyari mesaji vermektedir.
+lig combobox'una dbo.lig tablosundan ligler, dbo.takim tablosundan takimlar çekilmektedir.
+takimlar programimiza lig adina göre çekilmektedir.
+menü strip veya context menu strip sayesinde futbolsever giris ekranina geri dönebiliriz.
+kullanici adi, sifre ve takimimiz sql veritabaninda dbo.sporsever tablosunda depolanmaktadir.
+
+
+bilet al formu: 
+maçlar combobox'una dbo.mac tablosundan maçlar çekilmektedir. 
+tribün seç combobox'una her maç için ayri ayri belirledigimiz kapasite bilgileri gelmektedir.
+sag tarafta seçtigimiz maçin bilgileri ve bilet fiyatlari görünmektedir. 
+kapasitesi sifir olan bir tribün seçildiginde program uyari mesaji vermektedir. 
+foto bölümünün üzerinde her kullanicinin sanal bakiyesi görünmektedir.
+tribün seçimini yaptiktan sonra foto groupbox'i aktif olmaktadir. 
+foto groupbox'unda bilgisayarimizda kamerayi açacagimiz bir aç butonu ve çek butonu bulunmaktadir.
+foto groupbox'u pasif durumda oldugunda türkiye'nin futbolda ulusal düzeyde en büyük basarisini kazanmis takimin fotosu görünmektedir. 
+fotomuzu çektikten sonra satin al butonu aktif olmaktadir. 
+satin al butonuna tikladigimizda program ilk olarak bakiyemizin bilet fiyatindan yüksek/düsük oldugunu kontrol etmektedir.
+bakiyemiz  seçtigimiz bilet fiyatindan düsükse program uyari mesaji vermektedir.
+kullanici yanlislikla bos koltuk 0 olan bir tribünü seçtiyse program burada bir uyari mesaji daha vermekte ve bos tribünden bilet almayi engellemektedir.
+gerekli kontroller saglandiysa program fotogramizi seçtigimiz tribüne tanimliyor. girdigimiz bilgiler dbo.sporsever tablosuna ve dbo.kullanici_bilet tablosuna kaydedidiyor. 
+dbo.sporsever tablosunda sadece son aldigimiz bilet bilgileri kaydedilmektedir.
+satin alma islemi basariliysa program bakiyemizi ve seçtigimiz tribünün kapasitesini azaltmaktadir.
+menü stripte çikis ile yönetici giris formuna, profil ile profil formuna geçis yapabiliriz.
+context menü strip ile yönetici giris formuna gidebiliriz.
+
+
+profil formu: 
+kullanici adimizi ve takimimizi görüntüleyebiliriz. 
+bakiyemiz yeterli degilse bakiye arttirabiliriz.
+eger bilet aldiysak çektigimiz son bilet fotosu dbo.sporsever tablosundan son foto kismina çekilmektedir.
+alt tarafta listview'e dbo.kullanici_bilet tablosundan geçmiste aldigimiz biletler çekilmektedir.
+menü stripte çikis ile futbolsever giris formuna, bilet al ile bilet al formuna geçis yapabiliriz.
+context menü strip ile futbolsever giris formuna gidebiliriz.
+

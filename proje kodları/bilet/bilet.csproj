@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{425A01BD-994D-47C9-B449-1EAC73B4343F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bilet</RootNamespace>
+    <AssemblyName>bilet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\CAN\Desktop\15541805\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>15541805_Süleyman_Can</ProductName>
+    <PublisherName>TFF Bilet Satış Otomasyonu</PublisherName>
+    <SuiteName>Süleyman Can</SuiteName>
+    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon%282%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0C2F004382C21EAACD36E520750300EF4F31B019</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>bilet_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\..\..\Desktop\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\..\Desktop\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="biletal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="biletal.Designer.cs">
+      <DependentUpon>biletal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="futbolsevergiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="futbolsevergiris.Designer.cs">
+      <DependentUpon>futbolsevergiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="guncelle.Designer.cs">
+      <DependentUpon>guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ilk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ilk.Designer.cs">
+      <DependentUpon>ilk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciprofil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciprofil.Designer.cs">
+      <DependentUpon>kullaniciprofil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="macsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="macsil.Designer.cs">
+      <DependentUpon>macsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="yeniyonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yeniyonetici.Designer.cs">
+      <DependentUpon>yeniyonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yeniüye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yeniüye.Designer.cs">
+      <DependentUpon>yeniüye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticimacekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticimacekle.Designer.cs">
+      <DependentUpon>yoneticimacekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yöneticigiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yöneticigiris.Designer.cs">
+      <DependentUpon>yöneticigiris.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="biletal.resx">
+      <DependentUpon>biletal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="futbolsevergiris.resx">
+      <DependentUpon>futbolsevergiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guncelle.resx">
+      <DependentUpon>guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ilk.resx">
+      <DependentUpon>ilk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciprofil.resx">
+      <DependentUpon>kullaniciprofil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="macsil.resx">
+      <DependentUpon>macsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yeniyonetici.resx">
+      <DependentUpon>yeniyonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yeniüye.resx">
+      <DependentUpon>yeniüye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoneticimacekle.resx">
+      <DependentUpon>yoneticimacekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yöneticigiris.resx">
+      <DependentUpon>yöneticigiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bilet_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilkgiriss.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonfutbolseversarı.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FUTBOLSEVERGİRİSBUTON.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FS10.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girisfs.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilkgiriss.fw1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilkgiriss.fw2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FS10.fw1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fsgiris.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilkgiriss.fw3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girisfs.fw1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonfutbolseversarı1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FUTBOLSEVERGİRİSBUTON1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yoneticigiris2.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YONETİCİGİRİS.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTNYONETİCİOL.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yoneticiüye3.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTNÜYEOL.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\üye.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YONETİCİGİRİS.fw1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FUTBOLSEVERGİRİS.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\güncelle6w.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BTNGUNCELLE2.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\güncelle15.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle3.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MACEKLE..fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TEMİZLE..fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sil2.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BİLETAL6.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PROFİL20.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PROFİL23.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Back-2-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Mono-General-1-Back.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons_exit2-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons_delete-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\al.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.11.1">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon%282%29.ico" />
+    <None Include="Resources\favicon%282%29.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
