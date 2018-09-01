@@ -3,4 +3,4 @@ Fırat Üniversitesi Teknoloji Fakültesi Yazılım Mühendisliği 2. Sınıf Ne
 
 Bu masaüstü uygulamada MSSQL veritabanı  ve C# dilini kullandım. Hayalimdeki futbol maçlarına giriş sistemini uygulamaya çalıştım. 
 
-detaylı bilgi: https://suleymancanblog.com/2017/05/05/futbol-bilet-satis-otomasyonu/
+detaylı bilgi: https://suleymancanblog.wordpress.com/2017/05/05/futbol-bilet-satis-otomasyonu/
